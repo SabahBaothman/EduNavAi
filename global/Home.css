@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;500&display=swap');
+
+
+
+/* ----- Home ------ */
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-img{
+    width: 35vm;
+    margin-top: -300px;
+    margin-right: -200px;
+}
+.home-content{
+    margin-top: -350px;
+    margin-left: -150px;
+    margin-right: 100px;
+}
+.home-content h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+span{
+color: var(--primary-100);
+}
+.home-content h1{
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0.2em;
+}
+
+.home-content p{
+    margin-top: 10px;
+    font-size: 1rem;    
+}
+
+.animated-text{
+    font-size: 1.5rem;
+    font-weight: 700;
+    min-width: 280px;
+}
+
+.animated-text span{
+    position: relative;
+}
+
+.animated-text span::before{
+    content: "Create Your RoadMap";
+    color: var(--primary-100);
+    animation: words 20s infinite;
+}
+
+.animated-text span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: #2f3542;
+    border-left: 2px solid var(--primary-100);
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid #ff7f5000;
+    }
+}
+
+@keyframes words {
+    0%,20%{
+        content: " Create Your RoadMap";
+    }
+    21%,40%{
+        content: "Achievement Your Goal ";
+    }
+    41%,60%{
+        content: "Save Your Time";
+    }
+    61%,80%{
+        content: "Develope Your Skill";
+    }
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
+
+
+.Why {
+    background-color: var(--bg-200);
+    background-image: url(../images/background.png);
+}
+
+.Why h2{
+    margin-bottom: 5rem;
+    text-align: center;
+    margin-top: -80px;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0.2em;
+}
+.why-website{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8rem;
+}
+
+.why-website .why-box{
+padding: 3rem 2rem 4rem;
+border-radius: 2rem;
+text-align: center;
+border: .2rem solid var(--bg-100);
+transition: 5s ease;
+}
+
+.why-box i {
+    font-size: 5rem;
+    color: #7FB5EB;
+}
+
+.why-box h3 {
+    font-size: 1.5rem;
+    color: var(--text-200);
+
+}
+
+.why-box p {
+    font-size: 0.8rem;
+    color: var(--text-200);
+    margin: 1rem 0 3 rem ;
+
+}
+
+.why-website .why-box:hover{
+    border-color: var(--primary-100);
+    transform: scale(1.02);
+}
